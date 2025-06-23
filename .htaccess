@@ -1,0 +1,7 @@
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://embed.tawk.to https://ka-f.fontawesome.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com; object-src 'none'; base-uri 'self'; form-action 'self'"
+</IfModule> 
